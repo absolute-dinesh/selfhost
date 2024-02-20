@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Dinesh Reddy Maluchuru - Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #009688;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .experience, .projects {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .experience div, .projects div {
+            flex: 0 0 auto;
+            width: 100%;
+            min-width: 300px;
+            padding: 20px;
+            scroll-snap-align: start;
+        }
+
+        .experience {
+            background-color: #f9f9f9;
+        }
+
+        .project {
+            background-color: #fcfcfc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sai Dinesh Reddy Maluchuru</h1>
+        <p>Email: maluchurudinesh@gmail.com</p>
+    </header>
+
+    <nav>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+
+    <section id="education">
+        <h2>Education</h2>
+        <h3>Indian Institute of Technology, Madras</h3>
+        <p>Dual Degree(B.Tech + M.Tech) in Electrical Engineering - Minor in Development Sciences</p>
+        <p>Courses: Data Structures and Algorithms, Time Series Analysis, Linear Algebra</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p><b>Languages</b>: SQL, Python, Bash, R</p>
+        <p><b>Services/Tools/Frameworks</b>: Tableau, Power BI, Spark SQL, Hive, Impala, Shell Scripting, Hadoop, Synapse, Azure ML Studio , ADLS Gen2</p>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <!-- Include your work experience details here -->
+        
+        <div class="entry">
+            <h3>Microsoft, India - Data Engineer 2</h3>
+            <p>July 2022 - Present</p>
+            <p>Languages: SQL, Python, Bash</p>
+            <p class="responsibilities">Responsibilities:</p>
+            <ul>
+                <li>Ingesting and building business critical metrics for Windows.</li>
+                <li>Understanding business to identify and calculate different cohorts.</li>
+                <li>Leveraging Azure services and migrating existing legacy services to Azure.</li>
+                <li>Productionized ML models and implemented new frameworks to train deep-learning models and reduced training costs by 80% using Resilience LPG framework</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <h3>Amazon, India - Data Engineer</h3>
+            <p>July 2019 - July 2022</p>
+            <p>Languages: SQL, Python, Bash</p>
+            <p class="responsibilities">Responsibilities:</p>
+            <ul>
+                <li>Architecture design using Amazon ECS, Fargate, EC2, and S3 for scalable solutions.</li>
+                <li>Built critical datasets using Redshift for Amazon Logistics.</li>
+                <li>Optimized data pipelines for improved SLA and data quality.</li>
+                <li>Business support and DEA identification for Amazon Indian Logistics process.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <h3>JP Morgan Chase, India - Associate</h3>
+            <p>June 2017 - July 2019</p>
+            <p>Areas: Big Data, Hadoop, BI Reporting</p>
+            <p>Languages: SQL, Python, Bash</p>
+            <p class="responsibilities">Responsibilities:</p>
+            <ul>
+                <li>Delivered Cost-Based Allocation Model for Chase Merchant Services.</li>
+                <li>Built Tableau Dashboards for the Mortgage Banking sector.</li>
+                <li>Optimized processes using Spark SQL for a 50% improvement in SLA.</li>
+                <li>Implemented operational improvements using Autosys, Bit Bucket, and Jenkins.</li>
+            </ul>
+        </div>
+
+                <!-- General Electric entry with logo -->
+        <div class="entry">
+            <h3>General Electric - Intern</h3>
+            <p>May 2015 - July 2015</p>
+            <ul>
+                <li>Vehicle Fault Detection Techniques</li>
+                <li>Developing algorithms that can detect the fault in Vehicle engines using the data of other parameters.</li>
+                <li>Developed text mining techniques to filter the bad data and finding ground truth</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Include your project details here -->
+
+        <div class="entry">
+            <h3>Designing and implementing OKR metrics for windows (Microsoft)</h3>
+            <p>Area: Data Engineering</p>
+            <p>Languages: SCOPE, Python</p>
+            <p>Worked with key stackholders to calculate key metrics such as DAD / MAD / DSQ to different verticles such as Developer usage, Windows 11 adoption, Store conversion , Bing usage.</p>
+            <p>Metrics were instrumental for leadership team to take action items and track the metrics to target.</p>
+        </div>
+
+        <div class="entry">
+            <h3>Databricks to Synapse Migration (Microsoft)</h3>
+            <p>Area: ML Engineering</p>
+            <p>Languages: Python, SQL</p>
+            <p>Internal effort to migrate whole pipelines and processing jobs from databricks to synapse in azure.</p>
+            <p>As part of this effort, completely migrated the production jobs from databricks to synapse and deprecated the databricks workspaces (estimated saving of 40k$/year).</p>
+            <p>Conducted several internal trainings to show the usage of synapse and best practices with the team.</p>
+            <p>Several key POCs were done as part of adapting the synpase to the data science team and created thorough documentation and training material.</p>
+
+
+        </div>
+
+        <div class="entry">
+            <h3>Productionizing Store Personalization Model (Microsoft)</h3>
+            <p>Area: Machine Learning</p>
+            <p>Languages: Python</p>
+            <p>Leveraging the knowledge on Azure Blob, Azure Synapse and Azure ML Studio, worked with data scientists to come up with best architecture for end-to-end scalable solution.</p>
+            <p>Creation of embedding pipelines for preprocessing steps and managing whole infrastructure for the project.</p>
+            <p>Implementated a state of the art resilient low priority GPU framework to save training costs for deep learning models.</p>
+            <p>Conducted several training sessions to other teams to leverage this GPU framework for efficient and cost-effective training process.</p>
+        </div>
+
+        <div class="entry">
+            <h3>Intelligent Transportation System and Vehicular Detection (Dual Degree Project)</h3>
+            <p>Area: Machine Learning</p>
+            <p>July 2016 - May 2017</p>
+            <p>Languages: Python, R</p>
+            <p>Developed classifier algorithms for a Transportation System using Multiple Loop Inductive Sensors.</p>
+            <p>Achieved a successful prediction rate of 80% for vehicle detection.</p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Awarded One-Microsoft award for unblocking and providing efficient solutions to the team</li>
+            <li>All India Rank 728 in the IIT Joint Entrance Exam (IIT-JEE), among 480,000 students appeared</li>
+        </ul>
+    </section>
+</body>
+</html>
